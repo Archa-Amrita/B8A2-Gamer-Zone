@@ -1,0 +1,41 @@
+* {
+    font: work sans;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar {
+
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav ul>li {
+    list-style: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+.follow-btn {
+    width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    border: 0px;
+}
+
+.nav-icon {
+    width: 33.916px;
+    height: 24px;
+}
