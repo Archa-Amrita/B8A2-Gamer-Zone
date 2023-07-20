@@ -5,21 +5,31 @@
     margin: 0, auto;
 }
 
+.p-color {
+    color: #FF42A5;
+}
+
 .display {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .navbar {
 
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-}
-
-.nav-title {
-    font-size: 45px;
-    font-weight: 700;
 }
 
 nav ul>li {
@@ -53,8 +63,11 @@ nav ul>li {
 
 .banner-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 95px;
     font-weight: 800;
+}
+
+.gradient {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -93,4 +106,69 @@ nav ul>li {
 .banner-img {
     width: 719.446px;
     height: 681.018px;
+}
+
+/* Games Video */
+.games-vdo-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.games-vdo-title {
+    color: #0B0223;
+    text-align: center;
+}
+
+.games-vdo-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.games-vdos {
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.vdo {
+    width: 342px;
+    height: 400px;
+    padding: 24px;
+}
+
+/* Instant Play styles */
+.instant-play {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iplay-content {
+    width: 353px;
+    height: 294px;
+}
+
+.iplay-title {}
+
+.iplay-img-container {
+    width: 780px;
+    height: 725.833px;
+    position: relative;
+}
+
+.iplay-big-img {
+    width: 634.833px;
+    height: 650px;
+    border-radius: 8px;
+}
+
+.iplay-sml-img {
+    width: 318.5px;
+    height: 365.083px;
+    border-radius: 8px;
+    margin-left: -18%;
+    position: absolute;
+
 }
