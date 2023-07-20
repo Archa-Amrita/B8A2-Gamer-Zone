@@ -20,12 +20,17 @@
     font-weight: 400;
 }
 
-.display {
+.display1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-
+.display2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .gradient {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -35,9 +40,9 @@
 
 /* Nav styles */
 .navbar {
-
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 37px 240px;
 }
 
 nav ul>li {
@@ -63,19 +68,29 @@ nav ul>li {
 
 /* Banner styles */
 .banner-container {
-    padding-top: 120px;
+    padding-right: 240px;
+    padding-left: 240px;
+    padding-bottom: 100px;
+    background-image: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: 50% 75vh;
 }
-
+.banner-content{
+    
+    padding-right: 60px;
+}
 .banner-heading {
     color: #0B0223;
-    text-align: center;
+    text-align: left;
     font-size: 3rem;
     font-weight: 600;
+    padding-top: 100px;
+    margin-bottom: -50px;
 }
 
 .banner-title {
-    text-align: center;
-    font-size: 5rem;
+    text-align: left;
+    font-size: 6.5rem;
     font-weight: 800;
 }
 
@@ -87,9 +102,11 @@ nav ul>li {
 }
 
 .banner-btn {
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 #banner-btn1 {
@@ -115,7 +132,7 @@ nav ul>li {
 
 /* Games Video */
 .games-vdo-container {
-    padding-top: 120px;
+    padding: 0px 240px;
 }
 
 .games-vdo-title {
@@ -132,28 +149,38 @@ nav ul>li {
 }
 
 .games-vdos {
-    padding-left: 240px;
-    padding-right: 240px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 20px;
 }
 
 .vdo {
     width: 342px;
     height: 400px;
-    padding: 24px;
+    padding-top: 30px;
 }
+
+.photo:hover {
+    border: 5px solid #FF42A5;
+    border-radius: 16px;
+}
+
+
 
 /* Instant Play styles */
 .instant-play {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     align-items: center;
     padding-top: 120px;
+    padding-right: 100px;
 }
 
 .iplay-content {
-    width: 353px;
-    height: 294px;
-    /* padding: 120px; */
+    width: 290px;
+    height: 500px;
+    margin-right: 220px;
     text-align: right;
 }
 
@@ -174,7 +201,7 @@ nav ul>li {
 }
 
 .iplay-big-img {
-    width: 634.833px;
+    width: 635px;
     height: 650px;
     border-radius: 8px;
 }
@@ -195,7 +222,7 @@ nav ul>li {
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
-    align-content: center;
+    padding-top: 20px;
 }
 
 .play-games-btn {
@@ -264,7 +291,7 @@ nav ul>li {
     gap: 10px;
 }
 
-ul>li>a {
+footer ul>li>a {
     color: #FFF;
     text-decoration: none;
 
