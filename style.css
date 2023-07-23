@@ -25,15 +25,17 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .display2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 .gradient {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
+    /* background-clip: text; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -78,10 +80,12 @@ nav ul>li {
     background-repeat: no-repeat;
     background-size: 50% 75vh;
 }
-.banner-content{
-    
+
+.banner-content {
+
     padding-right: 60px;
 }
+
 .banner-heading {
     color: #0B0223;
     text-align: left;
@@ -152,10 +156,10 @@ nav ul>li {
 }
 
 .games-vdos {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
 }
 
 .vdo {
@@ -306,9 +310,10 @@ footer ul>li>a {
     font-weight: 500;
     text-align: center;
 }
+
 @media screen and (max-width: 576px) {
-    
-    .navbar{
+
+    .navbar {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -316,19 +321,22 @@ footer ul>li>a {
         background-color: #FFF;
         box-shadow: none;
     }
-    .display1{
+
+    .display1 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-items: center;
         gap: 20px;
     }
+
     /* banner */
-    .banner-container{
+    .banner-container {
         padding: 0px;
         background-image: none;
     }
-    .banner-content{
+
+    .banner-content {
         background-image: url(images/Group\ 14.png);
         background-repeat: no-repeat;
         padding: 0px 100px;
@@ -336,41 +344,113 @@ footer ul>li>a {
         background-size: 100% 100vh;
         order: 2;
     }
-    .banner-heading{
+
+    .banner-heading {
         font-size: 1.5rem;
         text-align: center;
         padding: 20px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 3rem;
         text-align: center;
         height: 50px;
     }
-    .banner-description{
+
+    .banner-description {
         margin-left: 15%;
         width: 70%;
         text-align: left;
         font-size: .7rem;
     }
-    .banner-btn{
+
+    .banner-btn {
         justify-content: center;
         padding: 20px 0px 50px 0px;
     }
-    .banner-btn > #banner-btn1{
+
+    .banner-btn>#banner-btn1 {
         padding: 16px 26px;
     }
-    .banner-btn > #banner-btn2{
+
+    .banner-btn>#banner-btn2 {
         padding: 16px 26px;
     }
-    .banner-img{
+
+    .banner-img {
         width: 300px;
-        height: 500px;
+        height: 350px;
         order: 1;
     }
-    .banner-img>img{
+
+    .banner-img>img {
         width: 100%;
         height: 100%;
     }
+
     /* Games Video */
-    
+    .games-vdo-container {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .games-vdo-title {
+        /* height: 10px; */
+        width: 450px;
+        padding: 0px 60px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .games-vdo-description {
+        font-size: .75rem;
+        width: 450px;
+        padding: 0px 60px;
+    }
+
+    .games-vdos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 30px;
+        padding: 0px 60px;
+    }
+
+    .vdo>p {
+        font-size: .75rem;
+        text-align: center;
+    }
+
+    /* Instant Play */
+    .instant-play {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 10px; */
+        padding: 50px 200px 50px 200px;
+    }
+    .iplay-content{
+        width: 270px;
+        text-align: center;
+        height: 100%;
+    }
+    .description{
+        font-size: .75rem;
+    }
+    .iplay-img-container{
+        width: 270px;
+    }
+    .iplay-big-img{
+        width: 400px;
+        height: 450px;
+    }
+    .iplay-sml-img{
+        width: 200px;
+        height: 220px;
+        margin-top: 100%;
+        margin-left: -20%;
+    }
 }
