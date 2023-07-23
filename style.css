@@ -2,7 +2,7 @@
     font-family: work sans;
     max-width: 1905px;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
 }
 
 .p-color {
@@ -36,6 +36,7 @@
 .gradient {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -58,11 +59,12 @@ nav ul>li {
 }
 
 .follow-btn {
-    width: 262px;
+    width: max-content;
     height: 56px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     border: 0px;
+    padding: 10px;
 }
 
 .nav-icon {
@@ -140,7 +142,7 @@ nav ul>li {
 
 /* Games Video */
 .games-vdo-container {
-    padding: 0px 240px;
+    padding: 50px 240px;
 }
 
 .games-vdo-title {
@@ -182,28 +184,28 @@ nav ul>li {
     justify-content: right;
     align-items: center;
     padding-top: 120px;
-    padding-right: 100px;
 }
 
 .iplay-content {
     width: 320px;
     height: 500px;
-    margin-right: 220px;
+    margin-right: auto;
+    padding-left: 20vw;
     text-align: right;
 }
 
 .iplay-img-container {
-    width: 780px;
+    width: max-content;
     height: 725px;
     position: relative;
 }
 
 .iplay-sml-img {
-    width: 318px;
+    width: max-content;
     height: 365px;
     border-radius: 8px;
     margin-top: 50%;
-    margin-left: -18%;
+    margin-left: -25%;
     position: absolute;
 
 }
@@ -227,7 +229,7 @@ nav ul>li {
 .play-game-btn-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     gap: 10px;
     padding-top: 20px;
@@ -264,17 +266,18 @@ nav ul>li {
 
 /* Footer */
 .footer-container {
-    background: #0B0223;
+    background-color: #0B0223;
     padding-bottom: 130px;
 }
 
 .footer-head {
     color: #FFF;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap: 10px;
     padding: 70px 0px;
+    width: min-content;
 }
 
 .footer-about {
@@ -319,6 +322,7 @@ footer ul>li>a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: max-content;
 }
 
 @media screen and (max-width: 576px) {
@@ -331,6 +335,9 @@ footer ul>li>a {
         background-color: #FFF;
         box-shadow: none;
     }
+    .nav-tabs{
+        padding-top: 20px;
+    }
 
     .display1 {
         display: grid;
@@ -342,7 +349,7 @@ footer ul>li>a {
 
     /* banner */
     .banner-container {
-        padding: 0px;
+        padding: 0px 0px 50px 0px;
         background-image: none;
     }
 
@@ -429,9 +436,10 @@ footer ul>li>a {
         padding: 0px 60px;
     }
 
-    .vdo>p {
+    .vdo > p {
         font-size: .75rem;
         text-align: center;
+        padding-top: 10px;
     }
 
     /* Instant Play */
@@ -441,7 +449,7 @@ footer ul>li>a {
         justify-content: center;
         align-items: center;
         /* padding-top: 10px; */
-        padding: 50px 0px 50px 80px;
+        padding: 50px 0px 100px 80px;
     }
 
     .iplay-content {
@@ -449,7 +457,7 @@ footer ul>li>a {
         text-align: center;
         margin: 0px;
         height: 100%;
-        padding: 0px 60px;
+        padding: 50px 60px 20px 60px;
     }
 
     .description {
@@ -457,7 +465,7 @@ footer ul>li>a {
     }
 
     .iplay-img-container {
-        width: 270px;
+        width: max-content;
         height: auto;
     }
 
@@ -469,7 +477,7 @@ footer ul>li>a {
     .iplay-sml-img {
         width: 200px;
         height: 220px;
-        margin-top: 100%;
+        margin-top: 80%;
         margin-left: -20%;
     }
 
@@ -481,13 +489,18 @@ footer ul>li>a {
     }
 
     .play-game-btn-container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 10px;
     }
 
     .play-games-btn {
         font-size: .75rem;
-        width: 150px;
+        width: max-content;
         height: 50px;
+        font-weight: 500px;
+        gap: 0px;
     }
 
     .pgame-btn-img {
@@ -496,25 +509,31 @@ footer ul>li>a {
     }
 
     /* footer styles */
+    .footer-head > img{
+        width: 50px;
+    }
     .footer-about {
         text-align: center;
+        margin-bottom: 30px;
     }
 
-    .footer-about>ul {
+    .footer-about > ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
-        gap: 10px;
-        width: auto;
+        gap: 0px;
+        width: max-content;
     }
 
+    .footer-about>ul>li{
+        padding-bottom: 10px;
+    }
     .footer-about>ul>li>a {
         font-size: .9rem;
     }
 
     .social-media {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
 
     .media-icon {
@@ -531,10 +550,6 @@ footer ul>li>a {
         align-items: center;
     }
 
-    .policies {
-        width: auto;
-    }
-
     .policies .display1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -544,7 +559,7 @@ footer ul>li>a {
     }
 
     .policies .display1>li{
-        width: 165px;
+        width: max-content;
     }
 
     .footer-info {
@@ -558,6 +573,6 @@ footer ul>li>a {
 
     .footer-info .footer-p {
         font-size: .75rem;
-        height: 0px;
+        height: 15px;
     }
 }
